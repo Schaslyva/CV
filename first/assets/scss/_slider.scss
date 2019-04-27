@@ -1,0 +1,54 @@
+.box_slider{
+	@include center;
+	width: 1440px;
+	height: 315px;
+	text-align: center;
+	color: $cg;
+
+		&>p:first-child{
+			font-family: 'roboto-regular';
+			margin-bottom: 10px;
+			font-size: 17pt;
+		}
+		&>p:nth-child(2){
+			font-family: 'myriadpro-regular';
+			font-size: 12pt;
+			margin-bottom: 25px;
+		}
+
+	.conteiner_slider{
+		@include center;
+		position: relative;
+		width: 1100px;
+		height: 200px;
+
+			
+			.slick-prev:before,
+			.slick-next:before{
+				color: black;
+			}
+	}
+.arrow_left{
+	position: absolute;
+	margin-top: 60px;
+	margin-left: -650px;
+	font-size: 50px;
+	color: $cg;
+	background: none;
+	border: none;
+	outline: none;
+}
+.arrow_right{
+	position: absolute;
+	margin-top: -130px;
+	margin-left: 590px;
+	font-size: 50px;
+	color: $cg;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+
+
+}

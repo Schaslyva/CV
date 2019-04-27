@@ -1,0 +1,83 @@
+
+@font-face{
+  font-family: 'Montserrat-ExtraLight';
+  src: url('../fonts/Montserrat-ExtraLight.ttf');
+  font-weight: normal;
+  font-style: normal;}
+
+@font-face{
+  font-family: 'Montserrat-Light';
+  src: url('../fonts/Montserrat-Light.ttf');
+  font-weight: normal;
+  font-style: normal;}
+
+@font-face{
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;}
+
+@font-face{
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;}
+
+@font-face{
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;}
+
+@font-face{
+  font-family: 'Gilroylight';
+  src: url('../fonts/Gilroy/Gilroylight.ttf');
+  font-weight: normal;
+  font-style: normal;}
+
+@font-face{
+  font-family: 'Gilroyextrabold';
+  src: url('../fonts/Gilroy/Gilroyextrabold.ttf');
+  font-weight: normal;
+  font-style: normal;}
+
+
+
+// MIXIN
+
+@mixin bold_text {
+  font-family: 'Gilroyextrabold';
+  font-size: 60pt;
+  color: black;
+}
+
+@mixin light_text {
+  font-family: 'Gilroylight';
+  font-size: 60pt;
+  color: black;
+}
+@mixin br {
+  border: 1px solid black
+}
+@mixin button {
+  font-family: 'Gilroylight';
+  font-weight: 700;
+  width: 240px;
+  height: 45px;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #000;
+  outline: 0;
+  border: 2px solid #000;
+  cursor: pointer;
+  transition: 0.5s
+}
+
+
+
+
+@import "first";
+@import "second";
+@import "third";
+@import "fourt";

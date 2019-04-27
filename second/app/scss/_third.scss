@@ -1,0 +1,167 @@
+.discription{
+  width: 100%;
+}
+.discription_line{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .discription_line_miniblock{
+    width: 120px;
+    height: 120px;
+    background: #5e42b0;
+    position: absolute;
+    left: 94%;
+    margin-top: 180px;
+    color: white;
+    font-family: 'ProximaNova-Bold';
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1200px) {
+      width: 90px;
+      height: 90px;
+      padding-top: 30px;
+    }
+    @media screen and (max-width: 1024px) {
+      left: 92%;
+      margin-top: 90px;
+    }
+    @media screen and (max-width: 768px) {
+      left: 90%;
+      margin-top: 50px;
+      width: 70px;
+      height: 70px;
+      padding: 20px;
+    }
+    @media screen and (max-width: 620px) {
+      width: 70px;
+      height: 70px;
+      padding-top: 20px;
+    }
+    @media screen and (max-width: 425px) {
+      width: 50px;
+      height: 50px;
+      padding-top: 10px;
+      padding-left:15px;
+    }
+    &:before{
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 8px;
+      background: #8f7bc8;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  }
+  .line_2_left_block{
+    width: 50%;
+    background-image: url(../img/jordan.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+  }
+  .line_2_right_block{
+    width: 50%;
+    -webkit-background-size: inherit;
+    padding: 100px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+
+    @media screen and (max-width: 1440px) {
+      padding: 50px;
+      padding-left: 100px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 10px;
+      padding-left: 100px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+      padding-left: 70px;
+    }
+    @media screen and (max-width: 425px) {
+      padding: 0px;
+      padding-left: 40px;
+    }
+
+    .right_block_text_1{
+      font-size: 80px;
+      font-family: 'ProximaNova-Bold';
+      color: #e6e6e6;
+      margin-top: 100px;
+      @media screen and (max-width: 1200px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 35px;
+        margin-top: 30px;
+      }
+      @media screen and (max-width: 620px) {
+        font-size: 25px;
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    }
+    .right_block_text_2{
+      font-family: 'ProximaNova-Reg';
+      font-size: 20px;
+      margin-top: 70px;
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+      }
+    }
+    .m_line{
+      width: 30px;
+      height: 8px;
+      background: #5e42b0;
+      border-radius: 10px;
+      margin-top: 100px;
+      margin-bottom: 20px;
+      @media screen and (max-width: 1200px) {
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 1024px) {
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 1024px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.miniblock_center{
+  left:-6% !important;
+  @media screen and (max-width: 1024px)  {
+    left: -8% !important;
+  }
+  @media screen and (max-width: 768px)  {
+    left: -12% !important;
+  }
+}
+.line_2_left_block_center{
+  background-image: url(../img/Coach.png) !important;
+}
+.line_2_left_block_bottom{
+  background-image: url(../img/Team.png) !important;
+}
+.line_2_right_block_center{
+  padding-left: 10px !important;
+  padding-right: 20px !important;
+}
+
+.line_2_left_block_top{
+  background-position: -50px 0;
+}

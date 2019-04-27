@@ -1,0 +1,33 @@
+@mixin center{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@mixin button{
+	  cursor: pointer;
+      height: 35px;
+      color: white;
+      border-radius: 7px;
+      background: #1bbc9c;
+      border-color: transparent;
+}
+
+@mixin br{
+     border: 1px solid black;
+}
+
+$color:#e9e9e9;
+
+$cg: #717170;
+
+a{	text-decoration: none;
+	color:white;}
+
+@import 'fonts';
+@import 'header';
+@import 'viev_section';
+@import 'content_section';
+@import 'slider';
+@import 'container_search';
+@import 'footer';
+

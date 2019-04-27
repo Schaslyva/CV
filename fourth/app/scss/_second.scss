@@ -1,0 +1,250 @@
+
+.slider_box_cover_wrap{
+  height: 1050px;
+  background: #fafafa;
+  clear: both;
+  border-top: 2px solid #c7c7c7;
+  box-shadow: 0px 10px 8px -6px #c7c7c7;
+}
+.slider_box_cover {
+  background: #fafafa;
+  max-width: 1920px;
+  height: 1050px;
+  clear: both;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+}
+
+.slider_box_top_text {
+  @include bold_text;
+  font-size: 28pt;
+  margin: auto;
+  width: 300px;
+  padding-top: 60px;
+}
+
+.slider_box_button_box {
+  height: 80px;
+  width: 800px;
+  // background: red;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.slider_box_button {
+  @include button;
+}
+.slider_third_box{
+  width: 10%;
+  height: inherit;
+  float: left;
+}
+
+.slider_box {
+  max-width: 1920px;
+  height: 700px;
+}
+
+.slider {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 50px;
+  height: 700px !important;
+}
+
+.slider_first_box,
+.slider_first_box_next{
+  position: relative;
+  width: 45%;
+  height: inherit;
+  background-image: url(../img/two.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: bottom;
+  float: left;
+}
+
+.slider_first_box_next{
+  background-image: url(../img/three.png);
+}
+
+.slider_second_box {
+  width: 45%;
+  height: inherit;
+  float: left;
+  border: 2px solid #c7c7c7;
+  border-left: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #fff;
+}
+
+.second_box_top {
+  width: 100%;
+  line-height: 50px;
+  height: 50%;
+  @include bold_text;
+  font-size: 28pt;
+  padding-left: 15%;
+  padding-top: 21%;
+  border-bottom: 2px solid #c7c7c7;
+  @media screen and (max-width: 1440px) {
+    font-size: 28px;
+  }
+}
+
+.second_box_top_button {
+  width: 70%;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
+  @media screen and (max-width: 1440px) {
+    width: 80%;
+  }
+}
+
+.second_box {
+  @include button;
+}
+
+.second_box_left,
+.second_box_right{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-right: 2px solid #c7c7c7;
+}
+.second_box_right{
+  border: none;
+}
+
+.icon_col,
+.icon_mark{
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/col.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+  margin-left: 20%;
+  margin-right: 20px;
+  float: left;
+  @media screen and (max-width: 1440px){
+    margin-left: 10%;
+  }
+}
+.icon_text{
+  @include light_text;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-top:95px;
+}
+.icon_mark{
+  background-image: none;
+  font-size: 28pt;
+  margin-right: 10px;
+  height: 100px;
+}
+.icon_text_mark{
+  line-height: 25px;
+  margin-top: 60px;
+}
+
+ul.maindots{
+  width: 300px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: -25px;
+
+}
+.maindots>li{
+  display: inline-block;
+}
+.maindots>li>button{
+  outline: none;
+  border:none;
+  font-size: 0px;
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+  &:before{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: black;
+    position: absolute;
+    z-index: 100;
+    content: '';
+    margin-left: -5px;
+  }
+}
+ul>li.slick-active{
+  &:before{
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-top: -0px;
+    content: '';
+    background: white;
+    position: absolute;
+    z-index: 1000000;
+  }
+}
+
+.arrow_left{
+  position: absolute;
+  margin-top: 50px;
+  font-size: 70px;
+  z-index: 10000;
+  color: transparent;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  outline: none;
+  width: 50px;
+  height: 700px;
+    &:hover{
+      color: black;
+      background: #fff;
+      opacity: 0.2;
+    }
+}
+.arrow_right{
+  position: relative;
+  left:84%;
+  top: -370px;
+  font-size: 50px;
+  color: transparent;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.arrow{
+  width: 60px;
+  height: 90px;
+  // background: green;
+  float: left;
+  position: relative;
+  margin-top: 315px;
+  margin-left: 40px;
+  font-size: 55pt;
+}

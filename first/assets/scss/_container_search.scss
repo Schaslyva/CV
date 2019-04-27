@@ -1,0 +1,123 @@
+.about_us_form_box{
+	@include center;
+	width: 1440px;
+	height: 500px;
+
+		.about_us_box{
+			width: 1440px;
+			height: 355px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(../img/line4.png);
+		}
+		.about_us_box>p:first-child{
+			font-family: 'Roboto-Light';
+			font-size: 28pt;
+			color: $color;
+			padding-top: 70px;
+			padding-bottom: 10px;
+		}
+		.about_us_box>p:nth-child(2){
+			font-family: 'Roboto-Light';
+			font-size: 20pt;
+			color: $color;
+			line-height: 30px;
+		}
+		.about_us_box_button{
+			@include button;
+			width: 230px;
+			height: 45px;
+			margin-top: 20px;
+			font-family: 'Roboto-medium';
+			font-size: 16pt;
+		}
+	.form_box{
+		width: 1440px;
+		height: 190px;
+		@include center;
+		background-image: url(../img/envelope.png);
+
+			>p:first-child{
+				margin-top:40px;
+				margin-left: 150px;
+				float: left;
+				font-family: 'Roboto-Light';
+				font-size: 28pt;
+			}
+			>p:nth-child(2){
+				float: left;
+				margin-top:90px;
+				margin-left: -300px;
+				font-family: 'myriadpro-regular';
+				font-size: 20pt;
+				
+			}
+
+			.form{
+				width: 600px;
+				height: 140px;
+				float: right;
+
+					.form_text{
+						border: 3px solid #1bbc9c;
+						border-top-left-radius: 7px; 
+						border-bottom-left-radius: 7px; 
+						width: 250px;
+						height: 35px;
+						margin-top: 50px;
+						outline: none;
+						margin-left: -300px
+						}
+					.form_button{
+						border-top-right-radius: 7px; 
+						border-bottom-right-radius: 7px;
+						border: 1px solid #1bbc9c;
+						position: absolute;
+						width: 170px;
+						height: 43px;
+						margin-left: -2px;
+						margin-top: 50px;
+						background-color: #1bbc9c;
+						color: white;
+						font-family: 'Roboto-Medium';
+						font-size: 16pt;
+						}
+				
+
+			}
+
+	}
+					// CHECKBOX
+					#checkbox{
+					 display: none;
+					}
+					label > p{
+						width: 300px;
+						margin-top: -20px;
+						margin-left: -55px;
+						font-family: 'Roboto-Light' ;
+					}
+					#checkbox + label{
+					    display: block;
+					    width: 15px;
+					    height: 15px;
+					    background: transparent;
+					    border: 1px solid #555;    
+					    text-align: center;
+					    margin-top: 10px;
+					    margin-left: 20px;    
+					}
+					#checkbox + label:before{
+					    content: '✔';
+					    font-size: 15px;
+					    line-height: 20px;
+					    color: transparent;
+					}
+					#checkbox:checked + label{
+					    border: 1px solid black;    
+					}
+					#checkbox:checked + label:before{
+					    color: #1bbc9c;
+					}	// CHECKBOX	
+			
+}

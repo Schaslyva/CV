@@ -1,0 +1,68 @@
+.main_content{
+	width: 1440px;
+	height: 500px;
+	color: $cg;
+	@include center;
+	.main_content_text{
+		font-family:'Roboto-Light';
+		font-size: 20pt;
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 70px;
+	}
+	.main_content_block{
+		height: 175px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.main_content_block_single{
+		width: 500px;
+		.main_content_block_single_img{
+			margin-left: 30px;
+			margin-right: 15px;
+			width: 170px;
+			height: 170px;
+			float: left;
+			background-image: url(../img/three_picture.png);
+			}
+		.--two{
+			background-position: -185px;
+		}
+		.--three{
+			background-position: -365px;
+		}
+		.main_content_block_single_text{
+			font-family: 'Roboto-Regular';
+			.main_content_block_single_text_one{
+				font-size: 16pt;
+				margin-bottom: 10px;
+			}
+			.main_content_block_single_text_two{
+				font-size: 12pt;
+				margin-bottom: 35px;
+			}
+			.main_content_block_single_text_button{
+				@include button;
+				width: 80px;
+				font-family: 'Roboto-medium';
+				font-size: 12pt;
+				margin-top: 10px;
+			}
+			.--text_two{
+				margin-bottom: 20px;
+			}
+			.--text_three{
+				margin-bottom: 7px;
+			}
+		}
+	}
+	.main_content_button{
+		@include button;
+		font-size: 12pt;
+		width: 300px;
+		margin-top: 50px;
+		margin-left: 600px;
+
+	}
+}
